@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap');
+
+body {
+    background: linear-gradient(179.4deg, rgb(12, 20, 69) -16.9%, rgb(71, 30, 84) 119.9%);
+    color: white;
+    font-family: 'Josefin Slab', serif;
+    height: 620px;
+    font-smooth: auto;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.move-icon {
+    height: 50px;
+
+/*
+Usando a opção CSS Filter, você pode aplicar efeitos ou alterar cores de forma rápida. Para alterar a cor de uma imagem, modifique as porcentagens das seguintes funções: grayscale(), sepia(), saturate(), opacity(), brightness(), contrast() e invert(). Se a imagem estiver em preto e branco, não será possível aumentar a saturação. O truque é aplicar o filtro sepia() para dar-lhe uma tonalidade e, assim, modificá-lo.
+
+Além das opções para alterar a cor, você também pode usar filtros com efeitos para modificar imagens:
+Grayscale → Altera a escala de cinza
+Invert → Inverte cores
+Brightness → Ajusta o brilho
+Saturation → Modifica a saturação
+Contrast → Aumenta ou diminui o contraste
+Sepia → Dá um tom marrom ao preto e branco para modificar o nível de saturação
+Blur → Desfoca, borra
+Opacity → Altera a opacidade
+Hue-rotate → Altera o tom da imagem
+Drop-shadow → Cria uma sombra
+*/
+   filter: invert(80%) sepia(86%) saturate(2808%) hue-rotate(190deg) brightness(103%) contrast(100%);
+}
+
+.move-button {
+    background-color: transparent;
+    border: 3px solid white;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.move-button:hover {
+	opacity: 0.5;
+}
+
+.move-button:active {
+	scale: 0.9;
+}
+
+.result {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.score {
+    margin-top: 60px;
+}
+
+.reset-score,
+.auto-play {
+    border: none;
+    font-size: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
+
+	border: 1px solid rgba(255, 255, 255, 0.9);
+	border-radius: 5px;
+
+	background: linear-gradient(179.4deg, rgb(12, 20, 69) -16.9%, rgb(71, 30, 84) 119.9%);
+	box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.1);
+
+	font-smooth: auto;
+	color: white;
+}
+
+.reset-score:hover {
+	opacity: 0.5;
+}
+
+.reset-score:active {
+	scale: 0.9;
+}
+
+.auto-play:hover {
+    opacity: 0.5;
+}
+
+.auto-play:active {
+    scale: 0.9;
+}
