@@ -68,7 +68,12 @@ Drop-shadow → Cria uma sombra
 .score {
     margin-top: 60px;
     color: white;
+    font-weight: bold;
 
+}
+
+.js-moves {
+    font-weight: bold;
 }
 
 .reset-score,
@@ -128,6 +133,7 @@ h5 {
 
     body {
         height: 680px;
+        font-smooth: auto;
     }
 
     .title {
@@ -136,6 +142,7 @@ h5 {
 
     .result {
         font-size: 25px;
+        font-weight: bold;
     }
 
     .move-button {
