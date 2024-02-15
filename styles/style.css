@@ -145,6 +145,16 @@ h5 {
         font-weight: bold;
     }
 
+    .score {
+        font-smooth: auto;
+        font-weight: bold;
+    }
+
+    .js-moves {
+        font-smooth: auto;
+        font-weight: bold;
+    }
+
     .move-button {
     background-color: transparent;
     border: 3px solid white;
