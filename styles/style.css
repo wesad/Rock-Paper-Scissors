@@ -20,7 +20,7 @@ body {
 }
 
 .move-icon {
-    height: 50px;
+    height: 40px;
 
 /*
 Usando a opção CSS Filter, você pode aplicar efeitos ou alterar cores de forma rápida. Para alterar a cor de uma imagem, modifique as porcentagens das seguintes funções: grayscale(), sepia(), saturate(), opacity(), brightness(), contrast() e invert(). Se a imagem estiver em preto e branco, não será possível aumentar a saturação. O truque é aplicar o filtro sepia() para dar-lhe uma tonalidade e, assim, modificá-lo.
@@ -36,8 +36,9 @@ Blur → Desfoca, borra
 Opacity → Altera a opacidade
 Hue-rotate → Altera o tom da imagem
 Drop-shadow → Cria uma sombra
-*/
+
    filter: invert(80%) sepia(86%) saturate(2808%) hue-rotate(190deg) brightness(103%) contrast(100%);
+*/
 }
 
 .move-button {
@@ -59,13 +60,16 @@ Drop-shadow → Cria uma sombra
 }
 
 .result {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     margin-top: 50px;
+    color: white;
 }
 
 .score {
     margin-top: 60px;
+    color: white;
+
 }
 
 .reset-score,
@@ -118,18 +122,53 @@ span {
 
 h5 {
     text-align: center;
-    margin-top: 4em;
+    margin-top: 9em;
 }
 
 @media(max-width: 430px) {
 
     body {
-        padding-bottom: 60px;
+        height: 680px;
     }
 
     .title {
         margin-top: -250px;
     }
+
+    .result {
+        font-size: 25px;
+    }
+
+    .move-button {
+    background-color: transparent;
+    border: 3px solid white;
+    width: 110px;
+    height: 110px;
+    border-radius: 60px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+    .move-icon {
+    height: 30px;
+
+/*
+Usando a opção CSS Filter, você pode aplicar efeitos ou alterar cores de forma rápida. Para alterar a cor de uma imagem, modifique as porcentagens das seguintes funções: grayscale(), sepia(), saturate(), opacity(), brightness(), contrast() e invert(). Se a imagem estiver em preto e branco, não será possível aumentar a saturação. O truque é aplicar o filtro sepia() para dar-lhe uma tonalidade e, assim, modificá-lo.
+
+Além das opções para alterar a cor, você também pode usar filtros com efeitos para modificar imagens:
+Grayscale → Altera a escala de cinza
+Invert → Inverte cores
+Brightness → Ajusta o brilho
+Saturation → Modifica a saturação
+Contrast → Aumenta ou diminui o contraste
+Sepia → Dá um tom marrom ao preto e branco para modificar o nível de saturação
+Blur → Desfoca, borra
+Opacity → Altera a opacidade
+Hue-rotate → Altera o tom da imagem
+Drop-shadow → Cria uma sombra
+*/
+   filter: invert(80%) sepia(86%) saturate(2808%) hue-rotate(190deg) brightness(103%) contrast(100%);
+}
 
     .info {
         display: none;
