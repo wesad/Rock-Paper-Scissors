@@ -36,9 +36,8 @@ Blur → Desfoca, borra
 Opacity → Altera a opacidade
 Hue-rotate → Altera o tom da imagem
 Drop-shadow → Cria uma sombra
-
-   filter: invert(80%) sepia(86%) saturate(2808%) hue-rotate(190deg) brightness(103%) contrast(100%);
 */
+   filter: invert(80%) sepia(86%) saturate(2808%) hue-rotate(190deg) brightness(103%) contrast(100%);
 }
 
 .move-button {
