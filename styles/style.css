@@ -138,11 +138,13 @@ h5 {
 
     .title {
         margin-top: -250px;
+        font-smooth: auto;
     }
 
     .result {
         font-size: 25px;
         font-weight: bold;
+        font-smooth: auto;
     }
 
     .score {
